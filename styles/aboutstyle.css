@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(11, 12, 16);
+}
+
+body main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title h1{
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 5px rgb(102, 252, 241);
+    
+}
+
+.body-paragraph {
+    padding-left: 15px;
+}
+.body-paragraph h2{
+    color:  rgb(102, 252, 241);
+    font-size: 26px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.body-paragraph p {
+    text-indent: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+.image-panel {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container {
+    position: relative;
+}
+.image-container div {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 3px;
+    left: 6px
+}
+.image-container img {
+    object-fit: cover;
+    width: 700px;
+    height: 500px;
+
+}
+.image-container h1 {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.image-container button {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+}
+.prev {
+    left: 0;  
+    margin-left: 2px;
+}
+.next {
+    right: 0;
+    margin-right: 2px;
+}
+.image-container button:hover {
+    background-color: rgba(0,0,0,0.5);
+}

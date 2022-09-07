@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/navstyle.css" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("/navbar.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+    <link rel="stylesheet" href="/styles/aboutstyle.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <main>
+      <section class="title">
+        <h1>About Me</h1>
+      </section>
+      <section class="body-paragraph">
+        <h2>Personal Life</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odit
+          dolore labore dicta mollitia modi, voluptatibus, sint inventore
+          accusamus voluptates impedit dolorum quisquam consequuntur deserunt
+          provident adipisci quibusdam. Sapiente consequatur voluptatem velit
+          iusto delectus facere itaque, natus tempore cupiditate esse sed
+          asperiores adipisci laudantium veniam, beatae in suscipit sunt
+          deleniti, voluptatibus quis cum quidem animi pariatur! Non quidem fuga
+          velit.
+        </p>
+        <h2>Education</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          deleniti fugiat molestias et error, corrupti aliquam nostrum nemo
+          totam ullam commodi vitae velit quasi quas? Facere debitis iusto
+          aliquid. Omnis blanditiis vel aut ut deleniti quos officia recusandae
+          voluptatum aliquid.
+        </p>
+        <h2>Activities</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          deleniti fugiat molestias et error, corrupti aliquam nostrum nemo
+          totam ullam commodi vitae velit quasi quas? Facere debitis iusto
+          aliquid. Omnis blanditiis vel aut ut deleniti quos officia recusandae
+          voluptatum aliquid.
+        </p>
+      </section>
+      <section class="image-panel">
+        <div class="image-container">
+          <div>1 / #</div>
+          <button class="prev">&#10094</button>
+          <button class="next">&#10095</button> 
+          <img src="/images/profileForNow.jpg" alt="" />
+          <h1>Description of image</h1>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

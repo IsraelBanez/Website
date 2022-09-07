@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/navstyle.css" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("/navbar.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+    <link rel="stylesheet" href="/styles/contactstyle.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <main>
+      <div class="contact-info">
+        <h1>Contact</h1>
+        <div class="contact-container">
+          <div><img src="/icons/user.png" alt="user" />Israel Banez</div>
+          <div>
+            <img src="/icons/car-building.png" alt="building" />Occupation
+          </div>
+          <div>
+            <img src="/icons/home.png" alt="home" />number street state zip
+          </div>
+          <div>
+            <img src="/icons/phone-call.png" alt="phone" />(831)-406-7606
+          </div>
+          <div>
+            <img src="/icons/envelope.png" alt="email" />izrael.banez@gmail.com
+          </div>
+        </div>
+      </div>
+      <div class="user-input">
+        <h2>Get In Touch</h2>
+        <div class="user-container">
+          <form>
+            <div class="top-info">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="mid-info">
+              <input type="text" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="bot-info">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

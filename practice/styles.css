@@ -1,0 +1,133 @@
+img {
+    width: 132px;
+    border-radius: 60px
+  }
+  
+video {
+    width: 500px;
+    height: 250px
+  }
+
+.hdr1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000
+}
+
+.p1 {
+    font-family: 'Times New Roman', Times, serif"
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Style for Navigation Bar */
+
+.navigationBar{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.navigationContainer {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 1;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.navMenuLeft {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+}
+.navMenuRight {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.navBars {
+    height: 80px;
+
+}
+
+.navPageLinks{ 
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #83aae5;
+    padding: 1px;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.navBarsBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    width: 100%;
+    background-color: cadetblue;
+}
+.navPageLinksBtn{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Hovering effect */
+.navPageLinksBtn:hover {
+    background: #83aae5;
+    transition: all 0.2s ease;
+}
+.navPageLinks:hover{
+    color: #000000;
+    transition: all 0.2s ease;
+}
+
+.projectButton {
+    background-color: rgb(172, 153, 214);
+    color: rgb(239, 239, 239);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    transition: all .2s ease;
+}
+.projectButton:hover {
+    opacity: .9;
+    background-color: #83aae5;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+.projectButton:active {
+    opacity: .7;
+}
